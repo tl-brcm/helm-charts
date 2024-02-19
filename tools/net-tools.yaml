@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nettool
+spec:
+  containers:
+  - name: nettool
+    image: praqma/network-multitool # This image contains a variety of network tools
+    command: ["sleep"]
+    args: ["infinity"]

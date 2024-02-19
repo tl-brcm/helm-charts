@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: nettool
+spec:
+  selector:
+    matchLabels:
+      name: nettool
+  template:
+    metadata:
+      labels:
+        name: nettool
+    spec:
+      containers:
+      - name: nettool
+        image: praqma/network-multitool
+        command: ["sleep"]
+        args: ["infinity"]

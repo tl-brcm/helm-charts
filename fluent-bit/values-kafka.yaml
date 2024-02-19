@@ -1,0 +1,16 @@
+   # [OUTPUT]
+    #     Name kafka
+    #     Match kube.*
+    #     Brokers my-kafka-controller-0.my-kafka-controller-headless.kafka.svc.cluster.local:9092,my-kafka-controller-1.my-kafka-controller-headless.kafka.svc.cluster.local:9092,my-kafka-controller-2.my-kafka-controller-headless.kafka.svc.cluster.local:9092
+    #     Topics myapp-${kubernetes['namespace']}
+    #     Timestamp_Key @timestamp
+    #     Retry_Limit False
+    #     rdkafka.log.connection.close false
+    #     rdkafka.request.required.acks 1
+    #     rdkafka.message.timeout.ms 5000
+    #     rdkafka.queue.buffering.max.messages 100000
+    #     rdkafka.queue.buffering.max.ms 1000
+    #     rdkafka.security.protocol SASL_PLAINTEXT
+    #     rdkafka.sasl.mechanisms SCRAM-SHA-256
+    #     rdkafka.sasl.username user1
+    #     rdkafka.sasl.password hzQGEKl4ZA

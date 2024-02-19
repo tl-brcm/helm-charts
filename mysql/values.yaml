@@ -1,0 +1,7 @@
+auth:
+  existingSecret: mysql-secret
+primary:
+  service:
+    type: LoadBalancer
+  persistentVolumeClaimRetentionPolicy: 
+    enabled: true

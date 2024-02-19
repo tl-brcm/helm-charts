@@ -1,0 +1,10 @@
+ingress:
+  enabled: true
+  hostname: myphpadmin.k3s.demo
+  ingressClassName: nginx
+
+db: 
+  # host: pstore-mysql.ssorest-pstore.svc.cluster.local
+  host: trw.securitydemo.io
+  port: 3306
+  

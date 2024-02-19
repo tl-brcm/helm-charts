@@ -1,0 +1,8 @@
+ingress:
+  enabled: true
+  className: nginx
+  hosts:
+  - artifactory.k3s.demo
+  annotations:
+    nginx.ingress.kubernetes.io/proxy-body-size: "0"
+databaseUpgradeReady: true

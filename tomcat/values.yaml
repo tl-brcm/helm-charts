@@ -1,0 +1,8 @@
+tomcatPassword: UGFzc3dvcmQxMjMh
+tomcatAllowRemoteManagement: 1
+ingress: 
+  enabled: true
+  hostname: tomcat.k3s.demo
+  ingressClassName: nginx
+  tls: true
+  selfSigned: true
